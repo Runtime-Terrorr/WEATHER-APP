@@ -1,0 +1,581 @@
+*{
+				margin: 0;
+				padding: 0;
+				
+}
+
+
+body{
+				
+				background:url(bg.jpeg);
+				background-attachment:fixed ;
+				background-size : cover;
+				background-position : center ;
+				height:100vh;
+				
+}
+
+.bgg{
+	z-index: 2;
+	position: fixed;
+}
+
+.search{
+				transition:1s;
+}
+
+.search input{
+position:absolute;
+width:200px;
+				border-radius:15px;
+			 background: solid white;
+			 border:2px solid white;
+			 top:40%;
+			 left:25%;
+			 padding:8px 0;
+}
+
+.input{
+				position:absolute;
+				width:200px;
+				border-radius:25px;
+				background: solid white;
+				border:3px solid white;
+				padding:8px ;
+				top:48%;
+				left:20%;
+				text-align:center;
+				text-transform:uppercase;
+				letter-spacing:1px;
+				font-color:white;
+				font-family: 'Vidaloka', serif;
+}
+.input:focus {
+ 				outline:none;
+ 				border-color:#9ecaed; 
+ 				box-shadow:0 0 10px #91ff80;
+ 				transition:0.5s;
+ 				
+}
+label{
+				position: absolute;
+				width:200px;
+				color:white;
+				border:3px solid white;
+				border-radius:25px;
+				padding :8px;
+				top:40%;
+				left:20%;
+				text-align:center;
+				font-family: 'Vidaloka', serif;
+
+
+}
+.searchicon img{
+position: absolute;
+				top:27%;
+				left:45%;
+				width:40px;
+				height: 40px;
+				
+				
+				
+}
+.search button{
+				position: fixed;
+				width:224px;
+				color:white;
+				background: transparent;
+				font-size:18px;
+				border:3px solid white;
+				border-radius:25px;
+				padding :8px;
+				top:56%;
+				left:20%;
+				text-align:center;
+				font-family: 'Vidaloka', serif;
+				
+
+
+}
+.search button:focus {
+ 				outline:none;
+ 				border-color:#9ecaed; 
+ 				box-shadow:0 0 10px #91ff80;
+ 				transition:0.5s;
+}
+.loadboxbtn{
+position: absolute;
+				width:100%;
+				margin:20px 30px;
+				border:2px solid white;
+				border-radius:25px;
+				
+}
+
+#loader{
+				position: absolute;
+				width:225px;
+				outline:none;
+				color:white;
+				top:45%;
+				left:20%;
+				display:none;
+				
+}
+.loading{
+				position:relative;
+				font-size:14px;
+				text-align:center;
+				border-radius:25px;
+				font-family: 'Vidaloka', serif;
+				animation: bounce 2s linear 3;
+			
+				
+}
+
+.load{
+				position:absolute;
+				width:100%;
+				height:30px;
+				border:6px solid white;
+				border-radius:25px;
+				animation:turn 6s ease 1.75s;
+				z-index:1;
+				
+}
+.load:before{
+				content:"";
+				display:block;
+				position:absolute;
+				width:100%;
+				border-radius:20px;
+				
+				height:100%;
+				background-color:#ffffff;
+				box-shadow:10px 0px 15px 0px solid white;
+				animation:load 4s ease 1;
+				z-index:-1;
+}
+
+
+
+@keyframes load{
+				0%{
+								width:13%;
+				}
+				87.5%{
+							 width:100℅;
+				}
+}
+.weatherdetail{
+				display: none;
+				background:url(main.jpeg);
+				background-attachment:fixed ;
+				background-size : cover;
+				background-position : center;
+				height:100vh;
+				
+}
+.glow img{
+				position: fixed;
+				top:40%;
+				left:15%;
+				width:30px;
+				height: 30px;
+				background-attachment:fixed ;
+}
+.gloww img{
+				position: fixed;
+				top:40%;
+				right:15%;
+				width:30px;
+				height: 30px;
+				background-attachment:fixed ;
+}
+.glowww img{
+				position: fixed;
+				top:40%;
+				left:47%;
+				width:30px;
+				height: 30px;
+				background-attachment:fixed ;
+}
+.gloww font{
+				position: fixed;
+				top:40%;
+				left:23.5%;
+				width:30px;
+				height: 30px;
+				color:white;
+				background-attachment:fixed ;
+}
+
+.glowww font{
+				position: fixed;
+				top:40%;
+				left:54.5%;
+				width:30px;
+				height: 30px;
+				color:white;
+}
+.loclogo img{
+				position: fixed;
+				top:1%;
+				left:45%;
+				width:30px;
+				height: 45px;
+				
+}
+.cityy {
+				position: fixed;
+				width:312px;
+				color:white;
+				border:none;
+				font-size:36px;
+				padding :8px;
+				text-transform:uppercase;
+				top:7%;
+				left:4%;
+				text-align:center;
+				font-family: 'Vidaloka', serif;
+			
+}
+.temp{
+				position: fixed;
+				width:130px;
+				font-size:66px;
+				font-family: 'Vidaloka', serif;
+				color:white;
+				top:18%;
+				text-align:center;
+				left:31%;
+				text-transform:uppercase;
+				
+}
+.desc{
+				position: fixed;
+				width:312px;
+				color:white;
+				border:none;
+				font-size:22px;
+				padding :8px;
+				text-transform:uppercase;
+				top:27%;
+				left:6%;
+				text-align:center;
+				font-family: 'Vidaloka', serif;
+			
+}
+.humidity{
+				position: fixed;
+				width:100px;
+				color:white;
+				border:none;
+				font-size:12px;
+				
+				padding :8px;
+				text-transform:uppercase;
+				top:54%;
+				left:34%;
+				text-align:center;
+				font-family: 'Vidaloka', serif;
+}
+.horline1{
+				position: fixed;
+				height:9%;
+				top:55%;
+				left:33.33%;
+				border-left:2px solid white;
+}
+.horline2{
+				position: fixed;
+				height:9%;
+				top:55%;
+				right:33.33%;
+				border-left:2px solid white;
+}
+.ws{
+				position: fixed;
+				width:100px;
+				color:white;
+				border:none;
+				font-size:12px;
+				
+				padding :8px;
+				text-transform:uppercase;
+				top:54%;
+				left:1%;
+				text-align:center;
+				font-family: 'Vidaloka', serif;
+}
+.pressure{
+				position: fixed;
+				width:100px;
+				color:white;
+				border:none;
+				font-size:12px;
+				
+				padding :8px;
+				text-transform:uppercase;
+				top:54%;
+				right:1%;
+				text-align:center;
+				font-family: 'Vidaloka', serif;
+}
+.wspng img{
+				position: fixed;
+				top:58.5%;
+				left:15%;
+				width:15px;
+				height: 15px;
+				
+}
+.humidpng img{
+				position: fixed;
+				top:58.5%;
+				right:15%;
+				width:15px;
+				height: 15px;
+				
+}
+.humiddpng img{
+				position: fixed;
+				top:58.5%;
+				left:49%;
+				width:15px;
+				height: 15px;
+				
+}
+.wsdata {
+				position: fixed;
+				font-size:12px;
+				font-family: 'Vidaloka', serif;
+				color:white;
+				top:62%;
+				left:9%;
+				text-transform:uppercase;
+}
+.wsunit {
+				position: fixed;
+				font-size:12px;
+				font-family: 'Vidaloka', serif;
+				color:white;
+				top:62%;
+				left:17%;
+				text-transform:uppercase;
+}
+.humiddata{
+				
+				position: fixed;
+				font-size:12px;
+				font-family: 'Vidaloka', serif;
+				color:white;
+				top:62%;
+				left:47%;
+				text-transform:uppercase;
+}
+
+.pressdata{
+				width:110px;
+				
+				position: fixed;
+				font-size:12px;
+				font-family: 'Vidaloka', serif;
+				color:white;
+				top:62%;
+				left:68%;
+				text-transform:uppercase;
+				text-align:center;
+				
+}
+
+.sr{
+				position: fixed;
+				width:100px;
+				color:white;
+				border:none;
+				font-size:12px;
+				
+				padding :8px;
+				text-transform:uppercase;
+				top:44%;
+				left:3%;
+				text-align:center;
+				font-family: 'Vidaloka', serif;
+}
+.ss{
+				position: fixed;
+				width:100px;
+				color:white;
+				border:none;
+				font-size:12px;
+				
+				padding :8px;
+				text-transform:uppercase;
+				top:44%;
+				right:3%;
+				text-align:center;
+				font-family: 'Vidaloka', serif;
+}
+.tz{
+				position: fixed;
+				width:100px;
+				color:white;
+				border:none;
+				font-size:12px;
+				
+				padding :8px;
+				text-transform:uppercase;
+				top:44%;
+				left:35%;
+				text-align:center;
+				font-family: 'Vidaloka', serif;
+}
+.mt{
+				position: fixed;
+				width:200px;
+				color:white;
+				border:none;
+				font-size:12px;
+				
+				padding :8px;
+				text-transform:uppercase;
+				top:68%;
+				left:6%;
+				text-align:center;
+				font-family: 'Vidaloka', serif;
+}
+.et{
+				position: fixed;
+				width:200px;
+				color:white;
+				border:none;
+				font-size:12px;
+				
+				padding :8px;
+				text-transform:uppercase;
+				top:76%;
+				left:6%;
+				text-align:center;
+				font-family: 'Vidaloka', serif;
+}
+.nt{
+				position: fixed;
+				width:200px;
+				color:white;
+				border:none;
+				font-size:12px;
+				
+				padding :1px;
+				text-transform:uppercase;
+				top:85%;
+				left:6%;
+				text-align:center;
+				font-family: 'Vidaloka', serif;
+}
+
+.srdata{
+				position: fixed;
+				font-size:12px;
+				font-family: 'Vidaloka', serif;
+				color:white;
+				top:51%;
+				left:12%;
+				text-transform:uppercase;
+}
+
+.ssdata{
+				position: fixed;
+				font-size:12px;
+				font-family: 'Vidaloka', serif;
+				color:white;
+				top:51%;
+				right:12%;
+				text-transform:uppercase;
+}
+
+.datedata{
+				position: fixed;
+				width:320px;
+				font-size:12px;
+				text-align:center;
+				
+				font-family: 'Vidaloka', serif;
+				color:white;
+				top:51%;
+				left:7%;
+				text-transform:uppercase;
+}
+.mttemp{
+				position: fixed;
+				font-size:12px;
+				font-family: 'Vidaloka', serif;
+				color:white;
+				top:69%;
+				right:20%;
+				text-transform:uppercase;
+}
+.ettemp{
+				position: fixed;
+				font-size:12px;
+				font-family: 'Vidaloka', serif;
+				color:white;
+				top:77%;
+				right:20%;
+				text-transform:uppercase;
+}
+.nttemp{
+				position: fixed;
+				font-size:12px;
+				font-family: 'Vidaloka', serif;
+				color:white;
+				top:85%;
+				right:20%;
+				text-transform:uppercase;
+}
+
+.report button{
+				
+				position: fixed;
+				height:58px;
+				width:318px;
+				color:white;
+				background: transparent;
+				font-size:18px;
+				border:4px solid white;
+				border-radius:25px;
+				padding :8px;
+				top:72.5%;
+				left:7%;
+				text-align:center;
+				font-family: 'Vidaloka', serif;
+				
+}
+
+.report button:focus {
+ 				outline:none;
+ 				border-color:#9ecaed; 
+ 				box-shadow:0 0 10px #91ff80;
+ 				transition:0.1s;
+}
+
+.page{
+				position:static;
+				font-size:20px;
+				color:white;
+				padding-top:250px;
+				padding-left:20px;
+				padding-right:20px;
+				
+				overflow:auto;
+				vertical-align:middle;
+				text-transform:uppercase;
+				width:90%;
+				height :100vw;
+				
+				text-align:center;
+				border-radius:25px;
+				font-family: 'Vidaloka', serif;
+				animation: bounce 2s linear 3;
+}
