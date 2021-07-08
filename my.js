@@ -141,7 +141,7 @@ var d=new Date().toLocaleTimeString();
 								 
 								 
 				})
-				.catch(err => alert('wrong city entered'))
+				.catch(err => alert('Check the Description or enter yours Api'))
 				
 				
 }
